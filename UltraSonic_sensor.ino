@@ -38,7 +38,7 @@ void loop() {
     digitalWrite(red_led, LOW);  
   }
   
-  if(distance >= 16 && distance <= 30) 
+  if(distance >= 16 && distance <= 30) //Activate the yellow led between these distance, else it won't activate
   {
     digitalWrite(yellow_led, HIGH);  
   }
@@ -47,7 +47,7 @@ void loop() {
     digitalWrite(yellow_led, LOW);
   }
 
-  if(distance >= 31 && distance <= 45)
+  if(distance >= 31 && distance <= 45) //Activate the green led between these distance, else it won't activate
   {
     digitalWrite(green_led, HIGH);  
   }
@@ -56,7 +56,7 @@ void loop() {
     digitalWrite(green_led, LOW);
   }
 
-  if(distance >= 46 && distance <= 100)
+  if(distance >= 46 && distance <= 100) //Activate the blue led between these distance, else it won't activate
   {
     digitalWrite(blue_led, HIGH);  
   }
